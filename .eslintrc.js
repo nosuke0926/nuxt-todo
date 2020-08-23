@@ -9,10 +9,16 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    'eslint-config-prettier'
   ],
-  plugins: [
-  ],
+  plugins: [],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'vue/html-self-closing': ['error', {
+      html: {
+        void: 'always'
+      }
+    }]
+  }
 }

@@ -20,5 +20,18 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.5.0",
     "eslint-plugin-nuxt": "^1.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": 0
+    }
   }
 }
